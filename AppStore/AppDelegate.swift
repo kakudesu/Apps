@@ -9,6 +9,7 @@
 import UIKit
 import Fabric
 import Crashlytics
+import Extension
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,6 +19,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        NSSetUncaughtExceptionHandler { (exception) in
+            print(log: "\(exception)\n\(Thread.callStackSymbols)")
+            exit(0);
+        }
         Fabric.with([Crashlytics.self])
         return true
     }

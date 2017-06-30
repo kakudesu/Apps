@@ -16,6 +16,8 @@
 		CE607ED11F04F472007E99DC /* AppStoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE607ED01F04F472007E99DC /* AppStoreUITests.swift */; };
 		CE607F481F052C28007E99DC /* Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE607F441F052C28007E99DC /* Extension.framework */; };
 		CE607F491F052C28007E99DC /* Extension.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE607F441F052C28007E99DC /* Extension.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CE6087391F06790D007E99DC /* Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6087371F067900007E99DC /* Network.framework */; };
+		CE60873A1F06790D007E99DC /* Network.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE6087371F067900007E99DC /* Network.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E7A7709F42AFCCD193AAB913 /* Pods_AppStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDD8096DEC2BDF242C8819F9 /* Pods_AppStore.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +46,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				CE607F491F052C28007E99DC /* Extension.framework in Embed Frameworks */,
+				CE60873A1F06790D007E99DC /* Network.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -66,6 +69,7 @@
 		CE607ED01F04F472007E99DC /* AppStoreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreUITests.swift; sourceTree = "<group>"; };
 		CE607ED21F04F472007E99DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE607F441F052C28007E99DC /* Extension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Extension.framework; path = Carthage/Build/iOS/Extension.framework; sourceTree = "<group>"; };
+		CE6087371F067900007E99DC /* Network.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Network.framework; path = Carthage/Build/iOS/Network.framework; sourceTree = "<group>"; };
 		D4C15E3192C32DFA388884E5 /* Pods-AppStore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppStore.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AppStore/Pods-AppStore.debug.xcconfig"; sourceTree = "<group>"; };
 		EDD8096DEC2BDF242C8819F9 /* Pods_AppStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -77,6 +81,7 @@
 			files = (
 				CE607F481F052C28007E99DC /* Extension.framework in Frameworks */,
 				E7A7709F42AFCCD193AAB913 /* Pods_AppStore.framework in Frameworks */,
+				CE6087391F06790D007E99DC /* Network.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +114,7 @@
 		7FFC789BE7D13716FDC7A864 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CE6087371F067900007E99DC /* Network.framework */,
 				CE607F441F052C28007E99DC /* Extension.framework */,
 				EDD8096DEC2BDF242C8819F9 /* Pods_AppStore.framework */,
 			);
