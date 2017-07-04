@@ -1,2 +1,2 @@
-github "DingSoung/Extension"
-github "DingSoung/Network"
+github "DingSoung/Extension" "master"
+github "DingSoung/Network" "master"
